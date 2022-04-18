@@ -60,3 +60,15 @@ body .container .contents .main .article .form .info input[placeholder="first na
 body .container .contents .main .article .form input[value="submit form"]{display: block;padding: .1em;cursor: pointer;}
 body .container .contents .main .article:nth-child(3){display: none;}
 /* article 4  */
+body .container .contents .main .article .chat .chatBoxs .inpSearch{border: 1px solid #000;width: fit-content;padding:7px;margin-bottom:1em ;}
+body .container .contents .main .article .chat .chatBoxs .inpSearch > input[placeholder="Search friends"]{border: none;}
+body .container .contents .main .article .chat .chatBoxs .inpSearch > a{cursor: pointer;}
+    /* strat personBox */
+body .container .contents .main .article .chat .chatBoxs .personBox{width: 180px;display: flex;align-items: center;justify-content: space-between; border-bottom: 1px solid rgba(0, 0, 0, 0.1); margin-bottom: 1em;padding:.3em 0em;}
+body .container .contents .main .article .chat .chatBoxs .personBox{margin-bottom: 0em;}
+body .container .contents .main .article .chat .chatBoxs .personBox > .imgMsgNAME{display: flex;align-items: center;}
+body .container .contents .main .article .chat .chatBoxs .personBox > .imgMsgNAME img{width: 50px;border-radius: 50%;margin-right: .5em;}
+body .container .contents .main .article .chat .chatBoxs .personBox .imgMsgNAME .msgName h4,span{text-align: left;}
+body .container .contents .main .article .chat .chatBoxs .personBox .imgMsgNAME span[class="active"]{color:rgb(0, 179, 45);}
+body .container .contents .main .article .chat .chatBoxs .personBox .numMsg{background-color: rgb(55, 175, 255);width: 20px;height: 20px;border-radius: 50%;color: #fff;padding: .8em;display: flex;justify-content: center;align-items: center;}
+body .container .contents .main .article .chat .chatBoxs .personBox:nth-child(3) .numMsg,body .container .contents .main .article .chat .chatBoxs .personBox:last-child .numMsg{background-color: transparent;}

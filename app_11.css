@@ -13,12 +13,12 @@ body .container .navBar .list li a{color:#fff;padding: 10px;display: inline-bloc
 body .container .navBar .list li a i{margin-right:10px;padding: 10px;background-color:rgb(128, 128, 128);}
 body .container .navBar .list li:hover a{background:rgba(0, 0, 0, 0.185);outline: 1px solid rgb(44, 205, 245);} 
 /* content */
-body .container {display: flex;flex-direction: column;}
+body .container {display: flex;}
 body .container .header{min-height: 100px;width: 100%;background-color: coral;display: flex;justify-content: space-between;align-items: center;flex-wrap: wrap;position: sticky;top: 0px;z-index: 1;}
 body .container .header p,h3,input{font-size: 20px;}
 body .container .header p{margin-left:3em;}
 body .container .header input{margin-right:2rem;}
-body .container .contents{min-height: 100vh;max-width: calc(100% - 235px);margin-left: 235px;min-height: 100vh;}
+body .container .contents{width: calc(100% - 235px);margin-left: 235px;min-height: 100vh;}
 /* article 1 */
 body .container .contents .main{position: relative;min-height: calc(100vh - 100px);padding: 2rem;}
 body .container .contents .main .article{margin-top: 1em;}
@@ -55,20 +55,38 @@ body .container .contents .main .article .profile_Picture .btns > input{display:
 body .container .contents .main .article .profile_Picture .btns input:first-child{background-color:aquamarine;margin-bottom: 0.25em;}
 body .container .contents .main .article .form .info{display: flex;align-items: center;}
 body .container .contents .main .article .form .info > label {width:75px;margin-right: 0.3em;}
-body .container .contents .main .article .form .i1{margin:.5em 0em;}
+body .container .contents .main .article .form .i1{margin:1em 0em;}
 body .container .contents .main .article .form .info input[placeholder="first name"],input[placeholder="city"]{margin-right: 10px;}
 body .container .contents .main .article .form input[value="submit form"]{display: block;padding: .1em;cursor: pointer;}
 body .container .contents .main .article:nth-child(3){display: none;}
 /* article 4  */
+body .container .contents .main .article .chat{display: flex;}
+body .container .contents .main .article .chat .chatBoxs {margin-right: 1em;}
 body .container .contents .main .article .chat .chatBoxs .inpSearch{border: 1px solid #000;width: fit-content;padding:7px;margin-bottom:1em ;}
 body .container .contents .main .article .chat .chatBoxs .inpSearch > input[placeholder="Search friends"]{border: none;}
 body .container .contents .main .article .chat .chatBoxs .inpSearch > a{cursor: pointer;}
     /* strat personBox */
-body .container .contents .main .article .chat .chatBoxs .personBox{width: 180px;display: flex;align-items: center;justify-content: space-between; border-bottom: 1px solid rgba(0, 0, 0, 0.1); margin-bottom: 1em;padding:.3em 0em;}
+body .container .contents .main .article .chat .chatBoxs .personBox{width: 100%;display: flex;align-items: center;justify-content: space-between; border-bottom: 1px solid rgba(0, 0, 0, 0.1); margin-bottom: 1em;padding:.3em 0em;}
 body .container .contents .main .article .chat .chatBoxs .personBox{margin-bottom: 0em;}
 body .container .contents .main .article .chat .chatBoxs .personBox > .imgMsgNAME{display: flex;align-items: center;}
 body .container .contents .main .article .chat .chatBoxs .personBox > .imgMsgNAME img{width: 50px;border-radius: 50%;margin-right: .5em;}
-body .container .contents .main .article .chat .chatBoxs .personBox .imgMsgNAME .msgName h4,span{text-align: left;}
-body .container .contents .main .article .chat .chatBoxs .personBox .imgMsgNAME span[class="active"]{color:rgb(0, 179, 45);}
+body .container .contents .main .article .chat .chatBoxs .personBox .imgMsgNAME .msgName h4,.msgName span{text-align: left;}
+body .container .contents .main .article .chat .chatBoxs .personBox .imgMsgNAME  span[class="active"]{color:rgb(0, 179, 45);text-align: left;}
 body .container .contents .main .article .chat .chatBoxs .personBox .numMsg{background-color: rgb(55, 175, 255);width: 20px;height: 20px;border-radius: 50%;color: #fff;padding: .8em;display: flex;justify-content: center;align-items: center;}
 body .container .contents .main .article .chat .chatBoxs .personBox:nth-child(3) .numMsg,body .container .contents .main .article .chat .chatBoxs .personBox:last-child .numMsg{background-color: transparent;}
+body .container .contents .main .article .chat .chatMsg{background-color: rgba(255, 153, 0, 0.233);position: relative;border-radius:5px 5px 0px 0px;padding-top: 1em;}
+body .container .contents .main .article .chat .chatMsg .screenChat{width: 400px; }
+body .container .contents .main .article .chat .chatMsg .screenChat .boxMsg{display: flex;align-items: center;margin-bottom: 1.5em;}
+body .container .contents .main .article .chat .chatMsg .screenChat .boxMsg:nth-child(1){float: left;clear: both;margin-left: 1em;}
+body .container .contents .main .article .chat .chatMsg .screenChat .boxMsg:nth-child(2){float: right;clear: both;flex-direction: row-reverse;margin-right: 1em;}
+body .container .contents .main .article .chat .chatMsg .screenChat .boxMsg:nth-child(3){float: left;clear: both;margin-left: 1em;}
+body .container .contents .main .article .chat .chatMsg .screenChat .boxMsg:nth-child(4){float: right;clear: both;flex-direction: row-reverse;margin-right: 1em;}
+body .container .contents .main .article .chat .chatMsg .screenChat .boxMsg:nth-child(5){float: left;clear: both;margin-left: 1em;}
+body .container .contents .main .article .chat .chatMsg .screenChat .boxMsg > img{width:50px;border-radius: 50%;margin-right: 1em;}
+body .container .contents .main .article .chat .chatMsg .screenChat .boxMsg:nth-child(2) img,body .container .contents .main .article .chat .chatMsg .screenChat .boxMsg:nth-child(4) img{margin-right:0em;margin-left:1em;}
+body .container .contents .main .article .chat .chatMsg .screenChat .boxMsg:nth-child(2) .msgTime h4,span{text-align: right;display: block;}
+body .container .contents .main .article .chat .chatMsg > .inpChat{background-color: rgb(255, 255, 255);position: absolute;bottom: 0px;width: 100%;display: flex;align-items: center;border: 1px solid rgba(0, 0, 0, 0.2);}
+body .container .contents .main .article .chat .chatMsg > .inpChat input{width: 100%;height: 40px;padding: .6em;font-size: 17px;border: 1px solid rgba(0, 0, 0, 0.2);}
+body .container .contents .main .article .chat .chatMsg > .inpChat a{font-size: 19px;width: 18px;display: inline-block;color: #000;}
+body .container .contents .main .article .chat .chatMsg > .inpChat a.paperclip{margin: 0px .5em;}
+body .container .contents .main .article .chat .chatMsg > .inpChat a.paper{margin-right:.5em;}
